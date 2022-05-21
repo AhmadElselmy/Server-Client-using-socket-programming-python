@@ -1,0 +1,304 @@
+With a hearth fireplace
+open used daily in
+cold period, we thought it
+was better to protect our
+home by installing a detector
+fire station operating 24 hours a day
+24. This is an emotage whose cost is
+very modest that we propose to you
+sounds to realize so you too,
+you can be warned at the earliest
+quickly if unfortunately a fire breaks out
+declared in your home.
+
+Fire detection
+---------------
+Note, first of all, that this
+mounting is not just about
+to those who have a fireplace
+at their home. A fire may break out
+anywhere, near a
+heat source from any
+type or following a short circuit on
+an electrical installation.
+
+As a result, this integrated assembly
+resent everyone and can even
+be made in multiple copies
+to monitor each part of a
+housing given the fact that
+its price does not exceed a few
+tens of francs.
+
+The principle used to detect a
+fire is based on the measurement of the
+temperature of the room where
+the detector is located. When the threshold (set at
+around 35 to 40°C) is reached,
+the alarm is triggered. In case of in
+fire in a room this temperature threshold
+(which can be reduced) is
+very quickly reached, even before
+you had time to
+wake up if you were sleeping in a
+adjoining room, hence the interest of
+the alarm. It may be objected that this
+principle does not make it possible to detect the
+presence of fumes, except if these
+these raise the temperature of the
+room in which the detector is located. 
+A smoke detector has already been proposed in the review.
+These two
+detectors can complement each other. We
+note, however, that the complexity
+of a smoke detector is more
+important than that of our mon
+tage that we can also ali
+lie by simple stacks (the func
+battery operation is guaranteed
+for more than a year in use
+permanent) which makes us prefer
+this solution.
+Temperature detection is
+entrusted to a thermistor (element
+resistive whose value depends on the
+temperature).
+
+The chosen model is
+a CTN (Resistor with negative temperature coefficient) whose nominal value
+nal at 20°C is 22 W2. When the temperature
+of this component increases, its
+resistance decreases according to an exponential law
+ (Figure 1).
+
+
+Synoptic and operation
+----------------------
+Figure 2 shows the structure of the detec
+fire maker. The first functional block
+is a time base that cyclically feeds the series association of the
+CTN and an adjustable resistor Ro. the
+setting of Ro is such that at normal temperature
+male, the voltage Vdec present at the terminals
+of this same resistance is less than the
+triggering threshold of the comparator which
+follows it (Vdec=Valim.R2/(R?+Rc{n)).
+
+If the
+temperature rises, the resistance of the NTC
+decreases, leading to an increase in
+Vdec. As soon as the comparator threshold is
+reached, its output goes high, which has
+the effect of starting the siren which
+must warn the user.
+Apart from periods of aJarm, almost
+all of the active components (of type
+CMOS) is idle. Considering the
+technology used, overall consumption
+of these is [ ïesque null. By feeding
+the temperature sensor itself
+by a time base instead of powering it
+permanently, we reduce consumption
+assembly, which prolongs the ckxed
+battery life and achieves
+operating time of about 600 days
+with 1 Ah capacity magpies.
+
+The NTC is in fact only supplied when Vt is in the high state, 
+i.e. for about 10%
+total monitoring time (Figure 3).
+Since the elements CTN and Ro
+consume nearly 90% of the energy
+necessary for assembly, this reduction in
+their working time is crucial to obtain
+nish a very low overall consumption. He
+however, it must be ensured that the monitoring
+remains sufficient. By taking a period of
+15 seconds and a duration of activity of the
+detector from 1 to 2 seconds, we can consider
+deny that surveillance is almost permanent
+missing and that this mode works
+ment does not alter your qualities of the detector.
+
+Structural diagram (figure 4)
+----------------------------
+The editing time base is based on
+the UIA NAND gate (CMOS type 4093)
+whose input T is brought to the high level
+permanently in order to authorize its function
+tion. Diodes D, and D? put
+respectively R1 and R? in service for
+that the condensate discharge time
+tor C is shorter than that of its
+charge. The U1b gate here plays a role of tam
+pon inverter at the output of which the duration of the
+high level represents only about 10%
+of the overall period. Its output feeds the
+CTN and the resistor Ro which is actually the ace
+serial association of R4 and RV? thanks to
+which can change the temperature of
+triggering the alarm.
+The comparator function is fulfilled by the
+RS-type flip-flop consisting of the
+dation of the 2 NOR and U2y gates For
+these CMOS type logic gates, the threshold
+tilting height is approximately
+equal to half the supply voltage.
+The setting of RV must therefore be such that at
+normal room temperature, voltage
+Vdec is below this threshold. When the
+ambient temperature exceeds the pre threshold
+defined by the setting of RV.. Vdec aug
+lies and exceeds failover threshold
+(Valim/2). The Q output of the RS flip-flop (pin
+4 of UJ goes high, allowing en
+entry into oscillation of the astable built around
+Uic and Uld. The P button connected to the input
+RESET resets the rocker to rest (output
+0=0) either after inserting the batteries or
+after an alarm.
+
+The period of this first astable, which
+mainly depends on the components
+Rf> and C3, is of the order of 0.3 to 0.4 s.
+When its output (Pin 10 of U1c) is at OV
+(low state), the second astable built around
+^2d U2c in turn enters into oscillation at
+a frequency (function of RV2 and C4)
+adjustable between 1 and 5 kHz. This signal is
+applied to a piezoelectric buzzer after
+amplification by the sextuple U3 inverter
+{CMOS type 4049). The disposition
+adopted for the 6 reversing gates of
+U3 increases their output current
+tie (parallel connection of the gates) and obtain
+ne a peak-to-peak voltage across the terminals of the
+buzzer equal to twice the power supply voltage
+ment. The timelines of the
+figure 5 give the shape of the signals in
+different points of the assembly depending on whether
+the latter is at rest or that the tempera
+set point has been exceeded.
+Setting the frequency of oscillations
+the astable, involving U2r and U2d,
+allows working at the resolution frequency
+nance of the buzzer, œ which increases the power
+sound sance it delivers. Modulation
+(we could also say the cutting) of the cir
+cooked with excitement of the buzzer by that of
+0.3 Hz period increases alarm range
+because it is recognized that a cut sound is
+more easily detectable by ear
+human than a continuous sound.
+The assembly must work permanently*
+
+
+Chronograms
+------------
+ence, no switch is provided for
+this one. Its food is entrusted to
+4 batteries of 1.5V type R6 or 3A depending on
+the space available in the case that we
+will have chosen. The power supply is decoupled
+by the value chemical capacitor C6
+non-critical (47 or 100 pF).
+
+Practical realization and
+settings
+-------------------------
+All assembly components
+holds on the printed circuit whose artwork is
+presented in figure 6 The components
+will be implanted after drilling in res
+pecting the drawing of figure 7. On com
+will start by implanting the components
+less thick (resistors, diodes) and we ter
+will undermine those of larger size
+(capacitors, pusher, cir supports
+integrated cookers, if you opt for this solution
+tion). Once the wiring is finished, we check
+will rely on a magnifying glass that no solder bridge
+do not short-circuit copper tracks voi
+sins. We will make sure to respect the good
+orientation of polarized components:
+chemical capacitors, diodes and cir
+integrated cooked.
+
+When this verification work is completed,
+that the integrated circuits are in place, we
+positions the 2 adjustable ones - halfway and
+the assembly is powered by 4 x 1.5V batteries
+that we will have previously arranged in
+a suitable coupler.
+It is very likely that the buzzer will start to
+operate at power-on
+tension. To stop it, just press
+button R twice or twice If this
+action has no effect, we will act on RV1 (turn
+counter-clockwise) to decrease
+Vdec and press P again œ which should stop the alarm.
+
+To adjust RV1 as best as possible (threshold close to
+35 to 40QC) without resorting to a
+thermostatically controlled enclosure, because it's a safe bet
+that our readers don't have that kind of
+material at their disposal, you have to improvise
+and do with the means at hand.
+A simple solution is to circle the CTN
+with the fingers and to seek the point of
+setting of RV1 which causes the trip
+ment of the alarm.
+To adjust RV2, we will trust our ears by
+striving for the most powerful sound
+possible when the alarm is triggered.
+
+Installation in elements
+--------------------------
+Once this job is done. There is no more
+than to put the assembly in a case. The
+size of the printed circuit allows the use of
+H0- brand translucent flat boxes
+LAND that should be machined to leave
+exceed the pusher and to ensure a
+optimum output of the sound emitted by the buzzer.
+The latter will be cdlé against the internal face
+of the case opposite the holes provided for
+sound output. A preliminary identification of
+the relative position of the different elements
+having to enter the housing is well avoided
+clearly necessary in order to avoid over-
+pnses at the time of final insertion.
+This fire detector will be placed,
+preferably, in a place located above
+tor, above a piece of furniture for example,
+because the heat is always higher at the
+ceiling level than at floor level.
+This provision will promote detection
+faster temperature rise
+that would follow in the event of a fire. We escaped
+however, it will be wise to set the detector to
+immediate proximity to a heat source
+their (oven, electric hob or radiator
+blowing) under penalty of internal detections
+pests, unless they have raised the triggerthreshold by RV.
+For the curious, the measurement of consumption
+information (excluding alarms) will be able to provide information
+the life of the batteries used. It is enough
+for this to interpose a milhammeter
+in series between the battery pack and the mon
+floor. With a 6V power supply, the inten
+absorbed site goes from 30pA when Vt is
+in the low state (90% of the time), at 220pA for
+Vt in high state (10% of the time). consumption
+average mation is therefore worth
+lmean=30.0(9+220.0.1 =49pA.
+
+Over a 24-hour day, energy consumes
+me is 24.49=1176pAh. With batteries
+1Ah capacity. it gives autonomy
+theoretical crumb of more than 800 pure. For
+be certain of the correct operation of the
+assembly, the batteries can be replaced at
+after a year, knowing full well that everything
+delay in this periodicity will be without
+important consequence.
